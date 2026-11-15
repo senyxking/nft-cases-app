@@ -15,7 +15,8 @@
   <main class="app">
     <header class="header">
       <div class="user"><div class="avatar" id="avatar">?</div><div class="username" id="username">Гость</div></div>
-      <div class="header-actions"><div class="balance">⭐ <span id="balance">0</span></div><button class="topup" id="topupBtn" type="button">+ Пополнить</button></div>
+<div class="header-actions"><div class="balance">⭐ <span id="balance">0</span></div><button class="topup" id="topupBtn" type="button" onclick="const m=document.getElementById('topupModal'); m.style.display='flex'; m.classList.add('open');">+ Пополнить</button></div>
+
     </header>
     <section class="screen" id="casesScreen">
       <h1 class="heading">Открывай кейсы</h1>
@@ -30,10 +31,10 @@
     </section>
   </main>
   <nav class="tabs" aria-label="Разделы"><button class="tab active" id="casesTab" type="button">🎁 Кейсы</button><button class="tab" id="inventoryTab" type="button">💎 Инвентарь</button></nav>
-  <div class="modal-backdrop" id="topupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="close" id="closeModal" aria-label="Закрыть">×</button><h2 id="modalTitle">Пополнение баланса</h2><p>Отправьте подарок, затем обновите баланс.</p><div class="modal-actions"><a class="gift-link" id="sendGift" href="https://t.me">Отправить подарок</a><button class="secondary" id="refreshBalance" type="button">Обновить баланс</button></div></div></div>
+  <div class="modal-backdrop" id="topupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="close" id="closeModal" aria-label="Закрыть">×</button><h2 id="modalTitle">Пополнение баланса</h2><p>Отправьте подарок, затем обновите баланс.</p><div class="modal-actions"><a class="gift-link" id="sendGift" href="https://t.me/ownertonov">Отправить подарок</a><button class="secondary" id="refreshBalance" type="button">Обновить баланс</button></div></div></div>
 <script>
-const API_BASE_URL = 'https://bot-hosting.cloud';
-const STORAGE_URL = 'https://t.me';
+const API_BASE_URL = 'https://1cs7mmior8.apps.bot-hosting.cloud';
+const STORAGE_URL = 'https://t.me/ownertonov';
 
 (() => {
   'use strict';
